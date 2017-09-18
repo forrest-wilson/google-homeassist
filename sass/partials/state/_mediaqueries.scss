@@ -2,7 +2,9 @@
 
 // For Viewports bigger than 399px
 @media screen and (min-width: 400px) {
-
+    h1 {
+        font-size: 36px;
+    }
 }
 
 // For Viewports bigger than 799px

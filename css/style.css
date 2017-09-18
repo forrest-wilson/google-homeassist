@@ -1,4 +1,83 @@
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: #898B8D; }
+
+body {
+  position: relative;
+  min-height: 100vh; }
+
+h1, p, a {
+  font-weight: 300;
+  line-height: 1.5em; }
+
+h1 {
+  font-size: 24px; }
+
+p {
+  font-size: 16px;
+  margin-top: 0; }
+
+a {
+  font-size: 16px;
+  color: #4885ED;
+  text-decoration: none; }
+
+.section {
+  padding: 0 20px;
+  padding-bottom: 20px; }
+
+#signinSection h1, #signinSection p {
+  text-align: center; }
+
+#signinButtonSection p, #signinButtonSection a {
+  text-align: center;
+  display: block; }
+
+#main {
+  position: relative;
+  top: 50px;
+  left: 0;
+  right: 0;
+  min-height: calc(100vh - 100px); }
+
+#footer {
+  height: 50px;
+  max-height: 50px;
+  background-color: #FFFFFF;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+  #footer p {
+    text-align: center;
+    font-size: 14px;
+    margin: 0;
+    line-height: 50px; }
+
+button {
+  color: #FFFFFF;
+  background-color: #4885ED;
+  border: 0;
+  width: 100%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  line-height: 50px;
+  cursor: pointer;
+  outline: 0;
+  padding: 0; }
+
+.itemSeparation {
+  margin-bottom: 10px; }
+
+@media screen and (min-width: 400px) {
+  h1 {
+    font-size: 36px; } }
+#signinLogo {
+  width: 150px;
+  margin: 0 auto;
+  display: block; }
 
 /*# sourceMappingURL=style.css.map */

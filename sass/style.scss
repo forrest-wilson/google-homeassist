@@ -1,4 +1,13 @@
 @import "partials/utilities/variables";
 @import "partials/utilities/mixins";
 @import "partials/base/base";
+@import "partials/layout/sections";
+@import "partials/modules/modules";
+@import "partials/state/state";
 @import "partials/state/mediaqueries";
+
+#signinLogo {
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+}

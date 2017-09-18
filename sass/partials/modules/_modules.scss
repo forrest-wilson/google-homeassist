@@ -1,0 +1,41 @@
+// Modules
+
+#main {
+    position: relative;
+    top: 50px;
+    left: 0;
+    right: 0;
+    min-height: calc(100vh - 100px); // Meant for sticky footer and Nav
+}
+
+#footer {
+    height: 50px;
+    max-height: 50px;
+    background-color: $whiteColor;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    p {
+        text-align: center;
+        font-size: 14px;
+        margin: 0;
+        line-height: 50px;
+    }
+}
+
+button {
+    color: $whiteColor;
+    background-color: $blueColor;
+    border: 0;
+    width: 100%;
+    @include borderRadius($borderRadius);
+    line-height: 50px;
+    cursor: pointer;
+    outline: 0;
+    padding: 0;
+}
+
+.itemSeparation {
+    margin-bottom: 10px;
+}

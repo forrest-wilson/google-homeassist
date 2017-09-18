@@ -2,4 +2,31 @@
 
 * {
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: $greyColor;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
+h1, p, a {
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+    margin-top: 0;
+}
+
+a {
+    font-size: 16px;
+    color: $blueColor;
+    text-decoration: none;
 }

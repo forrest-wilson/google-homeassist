@@ -1,18 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Exercise 3 SASS</title>
+	<title>Google HomeAssist</title>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CDN Font Link -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400" rel="stylesheet">
 
     <!-- CDN for normalize.css. Use for production code -->
     <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
 
     <!-- Offline normalize.css for local development -->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+    <!-- Minified style.css -->
 	<link rel="stylesheet" type="text/css" href="css/style.min.css">
 </head>
 <body>
-	
+    <main id="main">
+        <section id="signinSection" class="section">
+            <img id="signinLogo" src="img/logo.png" alt="Google HomeAssist Logo">
+            <h1>Welcome to<br>Google HomeAssist</h1>
+            <p>Nau mai ki<br>Google HomeAssist</p>
+        </section>
+
+        <section id="signinButtonSection" class="section">
+            <button class="button itemSeparation">Sign In</button>
+            <p>Don't have an account?</p>
+            <a href="#">Create one here</a>
+        </section>
+    </main>
+
+	<footer id="footer">
+        <p>© Forrest Wilson-Jennings 2017</p>
+	</footer>
 </body>
 </html>
