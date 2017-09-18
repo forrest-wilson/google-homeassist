@@ -1,5 +1,14 @@
 // Modules
 
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: $whiteColor;
+}
+
 #main {
     position: relative;
     top: 50px;
@@ -82,6 +91,35 @@ button {
         height: 2px;
         display: block;
         position: absolute;
+    }
+}
+
+.hamburgerButton {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+
+    .line1 {
+        top: 8px;
+    }
+
+    .line2 {
+        top: 14px;
+    }
+
+    .line3 {
+        bottom: 8px;
+    }
+
+    .line1, .line2, .line3 {
+        background-color: $greyColor;
+        display: block;
+        position: absolute;
+        width: 20px;
+        height: 2px;
         margin: 0 auto;
+        left: 0;
+        right: 0;
     }
 }

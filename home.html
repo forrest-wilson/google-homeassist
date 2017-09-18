@@ -21,17 +21,20 @@
     <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
-    <main id="main">
-        <section id="signinSection" class="section">
-            <img id="signinLogo" src="img/logo.png" alt="Google HomeAssist Logo">
-            <h1>Welcome to<br>Google HomeAssist</h1>
-            <p>Nau mai ki<br>Google HomeAssist</p>
-        </section>
+    <header id="header">
+        <aside id="hamburgerButton" class="hamburgerButton">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+        </aside>
+        <img id="headerLogo" src="img/logo.png">
+        <nav id="mobileNav">
 
-        <section id="signinButtonSection" class="section">
-            <button id="signinButton" class="button itemSeparation">Sign In</button>
-            <p>Don't have an account?<br><a href="https://accounts.google.com/SignUp?hl=en" target="_blank">Create one here</a></p>
-        </section>
+        </nav>
+    </header>
+
+    <main id="main">
+        
     </main>
 
 	<footer id="footer">
@@ -41,22 +44,7 @@
     <!-- Overlay -->
     <div id="overlay" class="section overlayOuter">
         <div class="section overlayInner">
-            <aside id="closeButton" class="closeButton itemSeparation">
-                <span class="line1"></span>
-                <span class="line2"></span>
-            </aside>
-
-            <form id="signinForm" action="home.html">
-                <fieldset>
-                    <label for="signinEmail">Email</label>
-                    <input type="email" name="signinEmail" id="signinEmail" required>
-                </fieldset>
-                <fieldset>
-                    <label for="signinPassword">Password</label>
-                    <input type="password" name="signinPassword" id="signinPassword" required>
-                </fieldset>
-                <button id="signin" class="button">Sign In</button>
-            </form>
+            
         </div>
     </div>
     

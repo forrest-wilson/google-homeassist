@@ -4,10 +4,10 @@ $(document).ready(function() {
     /////////////////////////
 
     $("#signinButton").click(function() {
-        $("#signinOverlay").fadeIn(300);
+        $("#overlay").fadeIn(300);
     });
 
     $("#closeButton").click(function() {
-        $("#signinOverlay").fadeOut(300);
+        $("#overlay").fadeOut(300);
     });
 });

@@ -39,6 +39,14 @@ form input {
   border: solid 2px #898B8D;
   padding: 10px; }
 
+#headerLogo {
+  width: 32px;
+  height: 32px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: 9px; }
+
 .section {
   padding: 20px;
   padding-bottom: 20px; }
@@ -49,6 +57,14 @@ form input {
 #signinButtonSection p, #signinButtonSection a {
   text-align: center;
   display: block; }
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: #FFFFFF; }
 
 #main {
   position: relative;
@@ -125,8 +141,28 @@ button {
     width: 20px;
     height: 2px;
     display: block;
+    position: absolute; }
+
+.hamburgerButton {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  margin: 10px; }
+  .hamburgerButton .line1 {
+    top: 8px; }
+  .hamburgerButton .line2 {
+    top: 14px; }
+  .hamburgerButton .line3 {
+    bottom: 8px; }
+  .hamburgerButton .line1, .hamburgerButton .line2, .hamburgerButton .line3 {
+    background-color: #898B8D;
+    display: block;
     position: absolute;
-    margin: 0 auto; }
+    width: 20px;
+    height: 2px;
+    margin: 0 auto;
+    left: 0;
+    right: 0; }
 
 @media screen and (min-width: 400px) {
   h1 {
