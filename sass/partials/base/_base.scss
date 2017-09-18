@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     color: $greyColor;
+    font-weight: 300;
 }
 
 body {
@@ -29,4 +30,23 @@ a {
     font-size: 16px;
     color: $blueColor;
     text-decoration: none;
+}
+
+form {
+    fieldset {
+        border: none;
+        margin: 0;
+        padding: 0 0 20px 0;
+    }
+
+    label {
+        display: block;
+    }
+
+    input {
+        width: 100%;
+        @include borderRadius($borderRadius);
+        border: solid 2px $greyColor;
+        padding: 10px;
+    }
 }

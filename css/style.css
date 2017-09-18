@@ -1,7 +1,8 @@
 * {
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  color: #898B8D; }
+  color: #898B8D;
+  font-weight: 300; }
 
 body {
   position: relative;
@@ -23,8 +24,23 @@ a {
   color: #4885ED;
   text-decoration: none; }
 
+form fieldset {
+  border: none;
+  margin: 0;
+  padding: 0 0 20px 0; }
+form label {
+  display: block; }
+form input {
+  width: 100%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  border: solid 2px #898B8D;
+  padding: 10px; }
+
 .section {
-  padding: 0 20px;
+  padding: 20px;
   padding-bottom: 20px; }
 
 #signinSection h1, #signinSection p {
@@ -71,6 +87,46 @@ button {
 
 .itemSeparation {
   margin-bottom: 10px; }
+
+.overlayOuter {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  display: none; }
+
+.overlayInner {
+  width: 100%;
+  background-color: #FFFFFF;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  max-width: 500px;
+  margin: 0 auto; }
+
+.closeButton {
+  width: 32px;
+  height: 32px;
+  position: relative; }
+  .closeButton .line1 {
+    transform: rotate(45deg);
+    top: 15px; }
+  .closeButton .line2 {
+    transform: rotate(-45deg);
+    bottom: 15px; }
+  .closeButton .line1, .closeButton .line2 {
+    background-color: #4885ED;
+    width: 20px;
+    height: 2px;
+    display: block;
+    position: absolute;
+    margin: 0 auto; }
 
 @media screen and (min-width: 400px) {
   h1 {
