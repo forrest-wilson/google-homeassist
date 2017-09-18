@@ -7,6 +7,7 @@
     right: 0;
     height: 50px;
     background-color: $whiteColor;
+    z-index: 90;
 }
 
 #main {
@@ -33,18 +34,6 @@
     }
 }
 
-button {
-    color: $whiteColor;
-    background-color: $blueColor;
-    border: 0;
-    width: 100%;
-    @include borderRadius($borderRadius);
-    line-height: 50px;
-    cursor: pointer;
-    outline: 0;
-    padding: 0;
-}
-
 .itemSeparation {
     margin-bottom: 10px;
 }
@@ -66,7 +55,7 @@ button {
     width: 100%;
     background-color: $whiteColor;
     @include borderRadius($borderRadius);
-    max-width: 500px;
+    max-width: 400px;
     margin: 0 auto;
 }
 
@@ -121,5 +110,109 @@ button {
         margin: 0 auto;
         left: 0;
         right: 0;
+    }
+}
+
+#mobileNav {
+    position: absolute;
+    top: 50px;
+    left: -100%;
+    background-color: $whiteColor;
+    z-index: 50;
+    width: 100%;
+    transition: $transitionSpeed;
+
+    h1, p {
+        text-align: center;
+    }
+    
+    ul {
+        list-style-type: none;
+
+        li {
+            background-color: $blueColor;
+            @include borderRadius($borderRadius);
+            margin-bottom: 10px;
+            height: 75px;
+
+            a {
+                color: $whiteColor;
+                text-align: center;
+                position: absolute;
+                line-height: 75px;
+                left: 0;
+                right: 0;
+            }
+        }
+    }
+}
+
+.scenes {
+    display: grid;
+    grid-column-gap: 10px;
+    position: relative;
+
+    .scene {
+        height: 75px;
+        background-color: $blueColor;
+        opacity: 0.5;
+        @include borderRadius($borderRadius);
+        cursor: pointer;
+        position: relative;
+        transition: $transitionSpeed;
+
+        img {
+            width: 25px;
+            height: 25px;
+            position: relative;
+            left: 10px;
+        }
+
+        p {
+            color: $whiteColor;
+            display: inline;
+            position: absolute;
+            right: 10px;
+        }
+
+        img, p {
+            @include verticalCenter;
+        }
+    }
+
+    .scene:nth-child(1) {
+        grid-column: 1/2;
+    }
+
+    .scene:nth-child(2) {
+        grid-column: 2/3;
+    }
+}
+
+.devices {
+    position: relative;
+
+    .device {
+        height: 75px;
+        background-color: $redColor;
+        @include borderRadius($borderRadius);
+        margin-bottom: 10px;
+        position: relative;
+
+        p {
+            color: $whiteColor;
+            display: inline;
+            left: 20px;
+        }
+
+        img {
+            width: 75px;
+            right: 20px;
+        }
+
+        p, img {
+            position: absolute;
+            @include verticalCenter;
+        }
     }
 }

@@ -1,9 +1,22 @@
 // MEDIA QUERIES
 
-// For Viewports bigger than 399px
-@media screen and (min-width: 400px) {
+// For Viewports bigger than 499px
+@media screen and (min-width: 500px) {
     h1 {
         font-size: 36px;
+    }
+
+    .signinMaxWidth {
+        width: 100%;
+        max-width: 400px;
+        display: block;
+        position: absolute;
+        @include absoluteCenter;
+    }
+
+    .overlayInner {
+        position: absolute;
+        @include absoluteCenter;
     }
 }
 

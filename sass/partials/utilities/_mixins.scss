@@ -4,5 +4,34 @@
     -webkit-border-radius: $radius;
        -moz-border-radius: $radius;
         -ms-border-radius: $radius;
+         -o-border-radius: $radius;
             border-radius: $radius;
+}
+
+// @mixin absoluteCenter($top: 50%, $translateX: translateX(-50%), $translateY: translateY(-50%)) {
+//     top: $top;
+//     -webkit-transform: $translateX $translateY;
+//        -moz-transform: $translateX $translateY;
+//         -ms-transform: $translateX $translateY;
+//          -o-transform: $translateX $translateY;
+//             transform: $translateX $translateY;
+// }
+
+@mixin verticalCenter {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+       -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+         -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+
+@mixin absoluteCenter {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+       -moz-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+         -o-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
 }

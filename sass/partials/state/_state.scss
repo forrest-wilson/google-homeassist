@@ -1,0 +1,13 @@
+// State
+
+.isActiveScene {
+    opacity: 1!important;
+}
+
+.isOnDevice {
+    background-color: $greenColor!important;
+}
+
+.isActiveMobileNav {
+    left: 0%!important;
+}

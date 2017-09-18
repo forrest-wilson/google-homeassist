@@ -22,16 +22,19 @@
 </head>
 <body>
     <main id="main">
-        <section id="signinSection" class="section">
+        <div class="signinMaxWidth">
             <img id="signinLogo" src="img/logo.png" alt="Google HomeAssist Logo">
-            <h1>Welcome to<br>Google HomeAssist</h1>
-            <p>Nau mai ki<br>Google HomeAssist</p>
-        </section>
 
-        <section id="signinButtonSection" class="section">
-            <button id="signinButton" class="button itemSeparation">Sign In</button>
-            <p>Don't have an account?<br><a href="https://accounts.google.com/SignUp?hl=en" target="_blank">Create one here</a></p>
-        </section>
+            <section id="signinSection" class="section">
+                <h1>Welcome to<br>Google HomeAssist</h1>
+                <p>Nau mai ki<br>Google HomeAssist</p>
+            </section>
+
+            <section id="signinButtonSection" class="section">
+                <button id="signinButton" class="button itemSeparation">Sign In</button>
+                <p>Don't have an account?<br><a href="https://accounts.google.com/SignUp?hl=en" target="_blank">Create one here</a></p>
+            </section>
+        </div>
     </main>
 
 	<footer id="footer">
@@ -46,7 +49,7 @@
                 <span class="line2"></span>
             </aside>
 
-            <form id="signinForm" action="home.html">
+            <form id="signinForm" action="home.html" method="POST">
                 <fieldset>
                     <label for="signinEmail">Email</label>
                     <input type="email" name="signinEmail" id="signinEmail" required>
@@ -55,7 +58,7 @@
                     <label for="signinPassword">Password</label>
                     <input type="password" name="signinPassword" id="signinPassword" required>
                 </fieldset>
-                <button id="signin" class="button">Sign In</button>
+                <button id="signin" class="button itemSeparation">Sign In</button>
             </form>
         </div>
     </div>

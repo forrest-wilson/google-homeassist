@@ -1,9 +1,9 @@
 @import "partials/utilities/variables";
 @import "partials/utilities/mixins";
+@import "partials/state/state";
 @import "partials/base/base";
 @import "partials/layout/sections";
 @import "partials/modules/modules";
-@import "partials/state/state";
 @import "partials/state/mediaqueries";
 
 #signinLogo {
