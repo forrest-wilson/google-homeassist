@@ -88,6 +88,7 @@
     width: 30px;
     height: 30px;
     margin: 10px;
+    cursor: pointer;
 
     .line1 {
         top: 8px;
@@ -115,7 +116,7 @@
 }
 
 #mobileNav {
-    position: absolute;
+    position: fixed;
     top: 50px;
     left: -100%;
     background-color: $whiteColor;
@@ -129,12 +130,15 @@
     
     ul {
         list-style-type: none;
+        display: grid;
+        grid-column-gap: 10px;
 
         li {
             background-color: $blueColor;
             @include borderRadius($borderRadius);
             margin-bottom: 10px;
             height: 75px;
+            position: relative;
 
             a {
                 color: $whiteColor;
@@ -144,6 +148,14 @@
                 left: 0;
                 right: 0;
             }
+        }
+
+        li:nth-child(1) {
+            grid-column: 1/2;
+        }
+
+        li:nth-child(2) {
+            grid-column: 2/3;
         }
     }
 }
