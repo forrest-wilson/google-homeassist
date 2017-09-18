@@ -11,3 +11,18 @@
 .isActiveMobileNav {
     left: 0%!important;
 }
+
+.isHamburgerPressedLine1 {
+    top: 14px!important;
+    transform: rotate(45deg)!important;
+}
+
+.isHamburgerPressedLine2 {
+    width: 0!important;
+    opacity: 0!important;
+}
+
+.isHamburgerPressedLine3 {
+    bottom: 14px!important;
+    transform: rotate(-45deg)!important;
+}

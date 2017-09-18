@@ -23,5 +23,8 @@ $(document).ready(function() {
     // Navigation popout
     $("#hamburgerButton").click(function() {
         $("#mobileNav").toggleClass("isActiveMobileNav");
+        $(".line1").toggleClass("isHamburgerPressedLine1");
+        $(".line2").toggleClass("isHamburgerPressedLine2");
+        $(".line3").toggleClass("isHamburgerPressedLine3");
     });
 });
