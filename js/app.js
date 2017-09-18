@@ -4,7 +4,6 @@ $(document).ready(function() {
     //// Click Functions ////
     /////////////////////////
 
-
     // Sign In Click Functions
     $("#signinButton").click(function() {
         $("#overlay").fadeIn(300);
