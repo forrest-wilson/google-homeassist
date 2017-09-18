@@ -39,14 +39,14 @@
     </footer>
 
     <!-- Overlay -->
-    <div class="section overlayOuter">
+    <div id="signinOverlay" class="section overlayOuter">
         <div class="section overlayInner">
-            <aside class="closeButton itemSeparation">
+            <aside id="closeButton" class="closeButton itemSeparation">
                 <span class="line1"></span>
                 <span class="line2"></span>
             </aside>
 
-            <form id="signinForm">
+            <form id="signinForm" action="home.html">
                 <fieldset>
                     <label for="signinEmail">Email</label>
                     <input type="email" name="signinEmail" id="signinEmail" required>
@@ -55,7 +55,7 @@
                     <label for="signinPassword">Password</label>
                     <input type="password" name="signinPassword" id="signinPassword" required>
                 </fieldset>
-                <button class="button">Sign In</button>
+                <button id="signin" class="button">Sign In</button>
             </form>
         </div>
     </div>
@@ -65,5 +65,8 @@
 
     <!-- jQuery Local -->
     <script src="js/jquery-3.2.1.min.js"></script>
+
+    <!-- JS Link -->
+    <script src="js/app.js"></script>
 </body>
 </html>
