@@ -86,6 +86,11 @@ form input {
   border: solid 2px #898B8D;
   padding: 10px; }
 
+#signinLogo {
+  width: 150px;
+  margin: 0 auto;
+  display: block; }
+
 #headerLogo {
   width: 32px;
   height: 32px;
@@ -340,9 +345,5 @@ form input {
 @media screen and (min-height: 650px) {
   #mobileNav ul {
     display: block; } }
-#signinLogo {
-  width: 150px;
-  margin: 0 auto;
-  display: block; }
 
 /*# sourceMappingURL=style.css.map */
