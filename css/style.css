@@ -4,6 +4,9 @@
 .isOnDevice {
   background-color: #3CBA54 !important; }
 
+.isOnSwitch {
+  transform: translateY(-50%) rotate(180deg) !important; }
+
 .isActiveMobileNav {
   left: 0% !important; }
 
