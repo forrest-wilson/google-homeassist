@@ -26,4 +26,10 @@ $(document).ready(function() {
         $(".line2").toggleClass("isHamburgerPressedLine2");
         $(".line3").toggleClass("isHamburgerPressedLine3");
     });
+
+    // Toggle On/Off of devices
+    $(".device .switch").click(function() {
+        $(this).parent().toggleClass("isOnDevice");
+        $(this).toggleClass("isOnSwitch");
+    });
 });
