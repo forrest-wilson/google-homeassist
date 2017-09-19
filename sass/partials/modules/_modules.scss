@@ -187,6 +187,8 @@
             display: inline;
             position: absolute;
             right: 10px;
+            max-width: calc(100% - 60px);
+            text-align: right;
         }
 
         img, p {
