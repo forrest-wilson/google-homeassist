@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Google HomeAssist</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CDN Font Link -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400" rel="stylesheet">
+
+    <!-- CDN for normalize.css. Use for production code -->
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
+
+    <!-- Offline normalize.css for local development -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+    <!-- Minified style.css -->
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <header id="header">
+        <aside id="hamburgerButton" class="hamburgerButton">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+        </aside>
+        <a href="home.html">
+            <img id="headerLogo" src="img/logo.png">
+        </a>
+    </header>
+
+    <main id="main">
+        <section class="section">
+            <h1>Here are the rooms<br>you have set up</h1>
+            <p>Anei nga ruma i<br>whakaturia e koe</p>
+        </section>
+
+        <section class="section">
+            <article>
+                <h1>Lounge</h1>
+                <p>Tae</p>
+            </article>
+            <article id="devices" class="devices">
+                <div class="device isOnDevice">
+                    <p>Lights</p>
+                    <img class="switch isOnSwitch" src="img/icons/switch.png">
+                </div>
+                <div class="device">
+                    <p>Heat Pump</p>
+                    <img class="settings" src="img/icons/settings.png">
+                </div>
+                <button>Show More</button>
+            </article>
+        </section>
+    </main> 
+
+	<!-- <footer id="footer">
+        <p>© Forrest Wilson-Jennings 2017</p>
+    </footer> -->
+
+    <nav id="mobileNav" class="section">
+        <h1>What would you like to do?</h1>
+        <p>He aha e hiahia ana koe ki te mahi?</p>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="all-rooms.html">View All Rooms</a></li>
+            <li><a href="all-scenes.html">View All Scenes</a></li>
+            <li><a href="add-device.html">Add a Device</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <!-- Overlay -->
+    <div id="overlay" class="section overlayOuter">
+        <div class="section overlayInner">
+            
+        </div>
+    </div>
+    
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <!-- jQuery Local -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+
+    <!-- JS Link -->
+    <script src="js/app.js"></script>
+</body>
+</html>
