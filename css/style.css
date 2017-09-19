@@ -208,7 +208,8 @@ form input {
   background-color: #FFFFFF;
   z-index: 50;
   width: 100%;
-  transition: 300ms; }
+  transition: 300ms;
+  height: calc(100vh - 50px); }
   #mobileNav h1, #mobileNav p {
     text-align: center; }
   #mobileNav ul {
@@ -290,10 +291,14 @@ form input {
     .devices .device p {
       color: #FFFFFF;
       display: inline;
-      left: 20px; }
+      left: 20px;
+      max-width: calc(100% - 135px); }
     .devices .device img {
-      width: 75px;
       right: 20px; }
+    .devices .device .switch {
+      width: 75px; }
+    .devices .device .settings {
+      width: 35px; }
     .devices .device p, .devices .device img {
       position: absolute;
       top: 50%;
