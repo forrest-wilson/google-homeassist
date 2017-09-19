@@ -321,6 +321,8 @@ form input {
       width: 75px; }
     .devices .device .settings {
       width: 35px; }
+    .devices .device .switch, .devices .device .settings {
+      cursor: pointer; }
     .devices .device p, .devices .device img {
       position: absolute;
       top: 50%;
