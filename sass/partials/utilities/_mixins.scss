@@ -8,15 +8,6 @@
             border-radius: $radius;
 }
 
-// @mixin absoluteCenter($top: 50%, $translateX: translateX(-50%), $translateY: translateY(-50%)) {
-//     top: $top;
-//     -webkit-transform: $translateX $translateY;
-//        -moz-transform: $translateX $translateY;
-//         -ms-transform: $translateX $translateY;
-//          -o-transform: $translateX $translateY;
-//             transform: $translateX $translateY;
-// }
-
 @mixin verticalCenter {
     top: 50%;
     -webkit-transform: translateY(-50%);
