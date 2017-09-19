@@ -123,6 +123,7 @@
     z-index: 50;
     width: 100%;
     transition: $transitionSpeed;
+    height: calc(100vh - 50px);
 
     h1, p {
         text-align: center;
@@ -216,11 +217,19 @@
             color: $whiteColor;
             display: inline;
             left: 20px;
+            max-width: calc(100% - 135px); // Ensures the text doesn't overlap the switch
         }
 
         img {
-            width: 75px;
             right: 20px;
+        }
+
+        .switch {
+            width: 75px;
+        }
+
+        .settings {
+            width: 35px;
         }
 
         p, img {
