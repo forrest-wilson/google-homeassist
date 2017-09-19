@@ -98,8 +98,8 @@ form input {
   padding: 10px 20px; }
   .section article {
     padding-bottom: 20px; }
-  .section article:last-child {
-    padding-bottom: 0px; }
+    .section article:last-child {
+      padding-bottom: 0px; }
 
 #signinSection h1, #signinSection p {
   text-align: center; }

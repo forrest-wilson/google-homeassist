@@ -3,10 +3,10 @@
 
     article {
         padding-bottom: 20px;
-    }
 
-    article:last-child {
-        padding-bottom: 0px;
+        &:last-child {
+            padding-bottom: 0px;
+        }
     }
 }
 
