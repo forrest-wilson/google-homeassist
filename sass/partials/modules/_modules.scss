@@ -234,6 +234,10 @@
             width: 35px;
         }
 
+        .switch, .settings {
+            cursor: pointer;
+        }
+
         p, img {
             position: absolute;
             @include verticalCenter;
