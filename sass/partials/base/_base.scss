@@ -40,6 +40,16 @@ ul {
     margin-bottom: 0;
 }
 
+select, button {
+    font-family: 'Poppins', sans-serif;
+}
+
+select {
+    width: 100%;
+    @include borderRadius($borderRadius);
+    border: solid 1px black;
+}
+
 button {
     color: $whiteColor;
     background-color: $blueColor;
@@ -50,7 +60,6 @@ button {
     cursor: pointer;
     outline: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
 }
 
 form {
