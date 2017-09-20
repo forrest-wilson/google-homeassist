@@ -320,6 +320,8 @@ form input {
 
 .devices {
   position: relative; }
+  .devices .toggleableDevices {
+    display: none; }
   .devices .device {
     height: 75px;
     background-color: #DB3236;

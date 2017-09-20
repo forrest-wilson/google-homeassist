@@ -61,4 +61,16 @@ $(document).ready(function() {
         $(this).hide();
         $(".testAlarmButton").show();
     });
+
+    // Show more Devices event
+    $(".showMoreButton").click(function() {
+        $(this).hide();
+        $(this).parent().find(".toggleableDevices").show();
+    });
+
+    // Hide Devices event
+    $(".showLessButton").click(function() {
+        $(this).parent().hide();
+        $(this).parent().parent().find(".showMoreButton").show();
+    });
 });

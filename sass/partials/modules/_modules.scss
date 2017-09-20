@@ -226,6 +226,10 @@
 .devices {
     position: relative;
 
+    .toggleableDevices {
+        display: none;
+    }
+
     .device {
         height: 75px;
         background-color: $redColor;
