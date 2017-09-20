@@ -50,4 +50,15 @@ $(document).ready(function() {
     $(".smokeAlarmSettings").click(function() {
         $("#smokeAlarmOverlay").fadeIn(300);
     });
+
+    // Test alarm button
+    $(".testAlarmButton").click(function() {
+        $(this).hide();
+        $(".testingAlarmButton").show();
+    });
+
+    $(".testingAlarmButton").click(function() {
+        $(this).hide();
+        $(".testAlarmButton").show();
+    });
 });
