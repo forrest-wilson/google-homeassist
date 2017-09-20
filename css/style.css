@@ -35,7 +35,6 @@
 
 body {
   position: relative;
-  min-height: 100vh;
   min-width: 200px; }
 
 h1, p, a {
@@ -154,21 +153,17 @@ form input {
       margin: 0 auto;
       position: relative; }
 
+.wrapper {
+  min-height: calc(100vh - 50px); }
+
 #main {
   position: relative;
-  top: 50px;
-  left: 0;
-  right: 0;
-  min-height: calc(100vh - 100px); }
+  padding-top: 50px; }
 
 #footer {
   height: 50px;
   max-height: 50px;
-  background-color: #FFFFFF;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0; }
+  background-color: #FFFFFF; }
   #footer p {
     text-align: center;
     font-size: 14px;

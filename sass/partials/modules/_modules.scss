@@ -25,22 +25,19 @@
     }
 }
 
+.wrapper {
+    min-height: calc(100vh - 50px);
+}
+
 #main {
     position: relative;
-    top: 50px;
-    left: 0;
-    right: 0;
-    min-height: calc(100vh - 100px); // Meant for sticky footer and Nav
+    padding-top: 50px;
 }
 
 #footer {
     height: 50px;
     max-height: 50px;
     background-color: $whiteColor;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
 
     p {
         text-align: center;
