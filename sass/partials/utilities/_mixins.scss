@@ -1,5 +1,11 @@
 // SASS MIXINS
 
+@mixin boxSizing {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
 @mixin borderRadius($radius) {
     -webkit-border-radius: $radius;
        -moz-border-radius: $radius;
