@@ -174,14 +174,15 @@ form input {
 
 .overlayOuter {
   background-color: rgba(0, 0, 0, 0.4);
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   width: 100%;
   height: 100%;
-  z-index: 100; }
+  z-index: 100;
+  display: none; }
 
 .overlayInner {
   width: 100%;
@@ -193,7 +194,9 @@ form input {
   border-radius: 5px;
   max-width: 400px;
   margin: 0 auto;
-  padding: 20px; }
+  padding: 20px;
+  max-height: calc(100vh - 20px);
+  overflow: auto; }
 
 .closeButton {
   width: 32px;
@@ -399,7 +402,6 @@ form input {
       opacity: 1; }
     .slideContainer .slider::-webkit-slider-thumb {
       -webkit-appearance: none;
-      appearance: none;
       width: 25px;
       height: 25px;
       border-radius: 50%;
