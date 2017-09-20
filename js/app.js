@@ -34,12 +34,13 @@ $(document).ready(function() {
         $(this).toggleClass("isOnSwitch");
     });
 
-    // Print slider value to the innerHTML of the slider label
-    var slider = document.getElementById("tempSlider");
-    var output = document.getElementById("tempOutput");
-    output.innerHTML = slider.value;
-    
-    slider.oninput = function() {
-        output.innerHTML = this.value;
-    }
+    // Show heater overlay
+    $(".heaterSettings").click(function() {
+        $("#heaterOverlay").fadeIn(300);
+    });
+
+    // Fade out Heater Overlay
+    $("#heaterOverlay .doneButton").click(function() {
+        $("#heaterOverlay").fadeOut(300);
+    });
 });
