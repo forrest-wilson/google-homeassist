@@ -247,7 +247,8 @@ form input {
   z-index: 50;
   width: 100%;
   transition: 300ms;
-  height: calc(100vh - 50px); }
+  height: calc(100vh - 50px);
+  overflow: auto; }
   #mobileNav h1, #mobileNav p {
     text-align: center; }
   #mobileNav ul {
