@@ -10,13 +10,11 @@
         width: 100%;
         max-width: 400px;
         display: block;
-        position: absolute;
-        @include absoluteCenter;
     }
 
-    .overlayInner {
-        position: absolute;
+    .signinMaxWidth, .overlayInner {
         @include absoluteCenter;
+        position: absolute;
     }
 }
 
