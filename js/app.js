@@ -9,9 +9,11 @@ $(document).ready(function() {
         $("#signinOverlay").fadeIn(300);
     });
 
-    $("#closeButton").click(function() {
+    // Closes all overlays using the .closeButton class
+    $(".closeButton").click(function() {
         $("#signinOverlay").fadeOut(300);
         $("#heaterOverlay").fadeOut(300);
+        $("#smokeAlarmOverlay").fadeOut(300);
     });
 
     // Scene Switching
@@ -42,5 +44,10 @@ $(document).ready(function() {
     // Fade out Heater Overlay
     $("#heaterOverlay .doneButton").click(function() {
         $("#heaterOverlay").fadeOut(300);
+    });
+
+    // Show smoke alarm overlay
+    $(".smokeAlarmSettings").click(function() {
+        $("#smokeAlarmOverlay").fadeIn(300);
     });
 });
