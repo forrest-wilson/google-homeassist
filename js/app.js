@@ -6,11 +6,11 @@ $(document).ready(function() {
 
     // Sign In Click Functions
     $("#signinButton").click(function() {
-        $("#overlay").fadeIn(300);
+        $("#signinOverlay").fadeIn(300);
     });
 
     $("#closeButton").click(function() {
-        $("#overlay").fadeOut(300);
+        $("#signinOverlay").fadeOut(300);
     });
 
     // Scene Switching
