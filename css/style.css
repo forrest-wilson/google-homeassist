@@ -109,14 +109,6 @@ form input {
   margin: 0 auto;
   display: block; }
 
-#headerLogo {
-  width: 32px;
-  height: 32px;
-  display: block;
-  margin: 0 auto;
-  position: relative;
-  top: 9px; }
-
 .section {
   padding: 10px 20px; }
   .section article {
@@ -139,6 +131,22 @@ form input {
   height: 50px;
   background-color: #FFFFFF;
   z-index: 90; }
+  #header a {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 9px; }
+    #header a .headerLogo {
+      width: 32px;
+      height: 32px;
+      display: block;
+      margin: 0 auto;
+      position: relative; }
 
 #main {
   position: relative;
@@ -173,8 +181,7 @@ form input {
   right: 0;
   width: 100%;
   height: 100%;
-  z-index: 100;
-  display: none; }
+  z-index: 100; }
 
 .overlayInner {
   width: 100%;
@@ -185,12 +192,14 @@ form input {
   -o-border-radius: 5px;
   border-radius: 5px;
   max-width: 400px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 20px; }
 
 .closeButton {
   width: 32px;
   height: 32px;
-  position: relative; }
+  position: relative;
+  cursor: pointer; }
   .closeButton .line1 {
     transform: rotate(45deg);
     top: 15px; }
@@ -323,12 +332,6 @@ form input {
       max-width: calc(100% - 135px); }
     .devices .device img {
       right: 20px; }
-    .devices .device .switch {
-      width: 75px; }
-    .devices .device .settings {
-      width: 35px; }
-    .devices .device .switch, .devices .device .settings {
-      cursor: pointer; }
     .devices .device p, .devices .device img {
       position: absolute;
       top: 50%;
@@ -338,11 +341,79 @@ form input {
       -o-transform: translateY(-50%);
       transform: translateY(-50%); }
 
+.switch {
+  width: 75px; }
+
+.settings {
+  width: 35px; }
+
+.switch, .settings {
+  cursor: pointer; }
+
 .selectArrow {
   background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc);
   background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
   background-size: 5px 5px, 5px 5px, 1px 1.5em;
   background-repeat: no-repeat; }
+
+.heaterOnOff {
+  display: grid; }
+  .heaterOnOff p {
+    grid-column: 1/2;
+    line-height: 75px; }
+  .heaterOnOff .heaterSwitch {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #DB3236;
+    height: 75px;
+    grid-column: 2/3;
+    position: relative;
+    min-width: 5px; }
+    .heaterOnOff .heaterSwitch .switch {
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      -moz-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+      -o-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      position: absolute; }
+
+.slideContainer {
+  width: 100%; }
+  .slideContainer .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #898B8D;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 300ms;
+    transition: opacity 300ms;
+    margin: 10px 0; }
+    .slideContainer .slider:hover {
+      opacity: 1; }
+    .slideContainer .slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background: #4885ED;
+      cursor: pointer; }
+    .slideContainer .slider::-moz-range-thumb {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background: #4885ED;
+      cursor: pointer; }
+
+.heatCoolSelect {
+  margin-top: 10px; }
 
 @media screen and (min-width: 500px) {
   h1 {
@@ -353,7 +424,7 @@ form input {
     max-width: 400px;
     display: block; }
 
-  .signinMaxWidth, .overlayInner {
+  .signinMaxWidth {
     top: 50%;
     left: 50%;
     -webkit-transform: translateX(-50%) translateY(-50%);
