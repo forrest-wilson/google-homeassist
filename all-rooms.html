@@ -28,7 +28,7 @@
             <span class="line3"></span>
         </aside>
         <a href="home.html">
-            <img id="headerLogo" src="img/logo.png" alt="Logo">
+            <img class="headerLogo" src="img/logo.png" alt="Logo">
         </a>
     </header>
 
@@ -130,7 +130,41 @@
     <!-- Overlay -->
     <div id="heaterOverlay" class="section overlayOuter">
         <section class="section overlayInner">
-            
+            <aside id="closeButton" class="closeButton itemSeparation">
+                <span class="line1"></span>
+                <span class="line2"></span>
+            </aside>
+
+            <article>
+                <p>Heater Settings<br>Ngā Tautuhinga Taitapa</p>
+            </article>
+
+            <article class="heaterOnOff">
+                <p>On/Off</p>
+                <div class="heaterSwitch">
+                    <img class="switch" src="img/icons/switch.png" alt="Switch Icon">
+                </div>
+            </article>
+
+            <article>
+                <p>Temperature</p>
+                <div class="slideContainer">
+                    <input type="range" min="18" max="35" value="21" class="slider" id="tempSlider">
+                    <p>Set Temperature: <span id="tempOutput"></span>°</p>
+                </div>
+            </article>
+
+            <article>
+                <p>Heat/Cool<br></p>
+                <div>
+                    <select class="selectArrow heatCoolSelect">
+                        <option value="heat">Heat</option>
+                        <option value="cool">Cool</option>
+                    </select>
+                </div>
+            </article>
+
+            <button>Done</button>
         </section>
     </div>
     
