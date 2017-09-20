@@ -143,6 +143,7 @@
     width: 100%;
     transition: $transitionSpeed;
     height: calc(100vh - 50px);
+    overflow: auto;
 
     h1, p {
         text-align: center;
