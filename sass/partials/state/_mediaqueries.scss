@@ -12,7 +12,7 @@
         display: block;
     }
 
-    .signinMaxWidth, .overlayInner {
+    .signinMaxWidth { // add .overlayInner
         @include absoluteCenter;
         position: absolute;
     }
