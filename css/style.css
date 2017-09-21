@@ -547,6 +547,15 @@ form input {
   .switch .slider.round:before {
     border-radius: 50%; }
 
+#mask {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); }
+
 @media screen and (min-width: 500px) {
   h1 {
     font-size: 36px; }

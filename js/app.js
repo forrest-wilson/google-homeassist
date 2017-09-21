@@ -35,6 +35,14 @@ $(document).ready(function() {
         $(".line1").toggleClass("isHamburgerPressedLine1");
         $(".line2").toggleClass("isHamburgerPressedLine2");
         $(".line3").toggleClass("isHamburgerPressedLine3");
+
+        if ($(this).hasClass("navOpen")) {
+            $(this).removeClass("navOpen");
+            $("#mask").fadeOut(transitionSpeed);
+        } else {
+            $(this).addClass("navOpen");
+            $("#mask").fadeIn(transitionSpeed);
+        }
     });
 
     // Navigation dropdown
