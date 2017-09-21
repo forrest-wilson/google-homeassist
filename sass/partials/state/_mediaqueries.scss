@@ -25,6 +25,15 @@
             grid-column: inherit;
         }
     }
+
+    #mobileNav {
+        max-width: 500px;
+        left: -500px;
+
+        ul li {
+            max-width: 400px;
+        }
+    }
 }
 
 // For Viewports bigger than 799px
