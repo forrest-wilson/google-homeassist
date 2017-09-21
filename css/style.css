@@ -273,7 +273,10 @@ form input {
       border-radius: 5px;
       margin-bottom: 10px;
       height: 75px;
-      position: relative; }
+      position: relative;
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto; }
       #mobileNav ul li a {
         color: #FFFFFF;
         text-align: center;
@@ -301,7 +304,8 @@ form input {
     -moz-transition: 300ms;
     -ms-transition: 300ms;
     -o-transition: 300ms;
-    transition: 300ms; }
+    transition: 300ms;
+    margin-bottom: 10px; }
     .scenes .scene img {
       width: 25px;
       height: 25px;
@@ -493,13 +497,11 @@ form input {
     display: block; }
 
   .signinMaxWidth {
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -o-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    position: absolute; } }
+    margin: 0 auto; }
+
+  .devices {
+    display: grid; }
+    .devices .device {
+      grid-column: inherit; } }
 
 /*# sourceMappingURL=style.css.map */
