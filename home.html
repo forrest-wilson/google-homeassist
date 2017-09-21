@@ -108,22 +108,6 @@
             
         </div>
     </div>
-
-    <!-- Load switch states from memory -->
-    <script type="text/javascript">
-        if (localStorage.getItem("switches") !== null) {
-            var Storage = JSON.parse(localStorage.getItem("switches"));
-            for (var i = 0; i < Storage.length; i++) {
-                if(Storage[i]['active'] === 'true' ){
-                    var SwitchID = Storage[i]['switch'];
-                    var SwitchExists = document.getElementById(SwitchID);
-                    if(SwitchExists !== null){
-                        SwitchExists.checked = true;
-                    }
-                }
-            };
-        }
-    </script>
     
     <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -136,5 +120,29 @@
 
     <!-- Button Toggle JS Link -->
     <script src="js/buttonToggle.js"></script>
+
+    <!-- Load switch states from memory -->
+    <script type="text/javascript">
+        function addClass(el, className) {
+            if (el.classList)
+                el.classList.add(className)
+            else if (!hasClass(el, className)) el.className += " " + className
+        }
+
+        if (localStorage.getItem("switches") !== null) {
+            var Storage = JSON.parse(localStorage.getItem("switches"));
+            for (var i = 0; i < Storage.length; i++) {
+                if(Storage[i]['active'] === 'true' ){
+                    var SwitchID = Storage[i]['switch'];
+                    var SwitchExists = document.getElementById(SwitchID);
+                    if(SwitchExists !== null){
+                        SwitchExists.checked = true;
+                        var parent = SwitchExists.parentElement.parentElement;
+                        addClass(parent, "isOnDevice");
+                    }
+                }
+            };
+        }
+    </script>
 </body>
 </html>
