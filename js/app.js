@@ -10,10 +10,11 @@ $(document).ready(function() {
     });
 
     // Closes all overlays using the .closeButton class
-    $(".closeButton").click(function() {
+    $(".closeButton, .doneButton").click(function() {
         $("#signinOverlay").fadeOut(300);
         $("#heaterOverlay").fadeOut(300);
         $("#smokeAlarmOverlay").fadeOut(300);
+        $("#addDeviceOverlay").fadeOut(300);
     });
 
     // Scene Switching
@@ -66,5 +67,10 @@ $(document).ready(function() {
     $(".showLessButton").click(function() {
         $(this).parent().hide();
         $(this).parent().parent().find(".showMoreButton").show();
+    });
+
+    // Add device button
+    $(".addDeviceButton").click(function() {
+        $("#addDeviceOverlay").fadeIn(300);
     });
 });
