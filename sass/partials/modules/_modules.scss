@@ -149,7 +149,7 @@
     
     ul {
         list-style-type: none;
-        display: grid;
+        display: block;
         grid-column-gap: 10px;
 
         li {
@@ -167,14 +167,6 @@
                 left: 0;
                 right: 0;
             }
-        }
-
-        li:nth-child(1) {
-            grid-column: 1/2;
-        }
-
-        li:nth-child(2) {
-            grid-column: 2/3;
         }
     }
 }
@@ -325,6 +317,10 @@
 
 .heatCoolSelect {
     margin-top: 10px;
+}
+
+.smokeAlarm, .heatPump {
+    background-color: $yellowColor!important;
 }
 
 .smokeAlarmStatus {
