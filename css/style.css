@@ -343,7 +343,12 @@ form input {
     -o-border-radius: 5px;
     border-radius: 5px;
     margin-bottom: 10px;
-    position: relative; }
+    position: relative;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms; }
     .devices .device p {
       color: #FFFFFF;
       display: inline;

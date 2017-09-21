@@ -232,6 +232,7 @@
         @include borderRadius($borderRadius);
         margin-bottom: 10px;
         position: relative;
+        @include transitionSpeed;
 
         p {
             color: $whiteColor;
