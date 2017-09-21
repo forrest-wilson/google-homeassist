@@ -12,9 +12,16 @@
         display: block;
     }
 
-    .signinMaxWidth { // add .overlayInner
-        @include absoluteCenter;
-        position: absolute;
+    .signinMaxWidth {
+        margin: 0 auto;
+    }
+
+    .devices {
+        display: grid;
+
+        .device {
+            grid-column: inherit;
+        }
     }
 }
 
