@@ -79,10 +79,4 @@ $(document).ready(function() {
     $(".addDeviceButton").click(function() {
         $("#addDeviceOverlay").fadeIn(transitionSpeed);
     });
-
-    $(".overlayOuter").click(function(e) {
-        e.stopPropagation();
-        e.preventDefault();
-        $(this).fadeOut(transitionSpeed);
-    });
 });
