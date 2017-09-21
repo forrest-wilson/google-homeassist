@@ -1,11 +1,15 @@
-// SASS MIXINS
+////////////////
+//// Mixins ////
+////////////////
 
+// Browser compatability for box-sizing
 @mixin boxSizing {
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
 }
 
+// Browser compatability for border-radius
 @mixin borderRadius($radius) {
     -webkit-border-radius: $radius;
        -moz-border-radius: $radius;
@@ -14,6 +18,7 @@
             border-radius: $radius;
 }
 
+// Vertically center any element. Requires a set position
 @mixin verticalCenter {
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -23,6 +28,7 @@
             transform: translateY(-50%);
 }
 
+// Horizontally center any element. Requires a set position
 @mixin horizontalCenter {
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -32,6 +38,7 @@
             transform: translateX(-50%);
 }
 
+// Vertically & horizontally center any element. Requires a set position
 @mixin absoluteCenter {
     top: 50%;
     left: 50%;
@@ -42,6 +49,7 @@
             transform: translateX(-50%) translateY(-50%);
 }
 
+// Browser compatability for transition speed
 @mixin transitionSpeed {
     -webkit-transition: $transitionSpeed;
        -moz-transition: $transitionSpeed;

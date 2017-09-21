@@ -1,4 +1,6 @@
-// State
+///////////////
+//// State ////
+///////////////
 
 .isActiveScene {
     opacity: 1!important;
@@ -6,10 +8,6 @@
 
 .isOnDevice {
     background-color: $greenColor!important;
-}
-
-.isOnSwitch {
-    transform: translateY(-50%) rotate(180deg)!important;
 }
 
 .isActiveMobileNav {
