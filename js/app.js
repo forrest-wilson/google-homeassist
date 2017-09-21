@@ -37,6 +37,15 @@ $(document).ready(function() {
         $(".line3").toggleClass("isHamburgerPressedLine3");
     });
 
+    // Navigation dropdown
+    $("#tvHamburgerButton").click(function() {
+        $("#tvNav").toggleClass("isActiveTVNav");
+        $("#main").toggleClass("isActiveTVNavMain");
+        $(".line1").toggleClass("isHamburgerPressedLine1");
+        $(".line2").toggleClass("isHamburgerPressedLine2");
+        $(".line3").toggleClass("isHamburgerPressedLine3");
+    });
+
     // Show heater overlay
     $(".heaterSettings").click(function() {
         $("#heaterOverlay").fadeIn(transitionSpeed);

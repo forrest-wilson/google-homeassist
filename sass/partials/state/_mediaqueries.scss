@@ -40,3 +40,18 @@
 @media screen and (min-width: 800px) {
     
 }
+
+// For Viewports bigger than 1279px
+@media screen and (min-width: 1280px) {
+    #hamburgerButton {
+        display: none;
+    }
+
+    #tvHamburgerButton {
+        display: block;
+    }
+    
+    #mobileNav {
+        display: none;
+    }
+}
