@@ -1,4 +1,10 @@
 $(document).ready(function() {
+
+    ///////////////////
+    //// Variables ////
+    ///////////////////
+
+    var transitionSpeed = 300;
     
     /////////////////////////
     //// Click Functions ////
@@ -6,15 +12,15 @@ $(document).ready(function() {
 
     // Sign In Click Functions
     $("#signinButton").click(function() {
-        $("#signinOverlay").fadeIn(300);
+        $("#signinOverlay").fadeIn();
     });
 
     // Closes all overlays using the .closeButton class
     $(".closeButton, .doneButton").click(function() {
-        $("#signinOverlay").fadeOut(300);
-        $("#heaterOverlay").fadeOut(300);
-        $("#smokeAlarmOverlay").fadeOut(300);
-        $("#addDeviceOverlay").fadeOut(300);
+        $("#signinOverlay").fadeOut(transitionSpeed);
+        $("#heaterOverlay").fadeOut(transitionSpeed);
+        $("#smokeAlarmOverlay").fadeOut(transitionSpeed);
+        $("#addDeviceOverlay").fadeOut(transitionSpeed);
     });
 
     // Scene Switching
@@ -33,17 +39,17 @@ $(document).ready(function() {
 
     // Show heater overlay
     $(".heaterSettings").click(function() {
-        $("#heaterOverlay").fadeIn(300);
+        $("#heaterOverlay").fadeIn(transitionSpeed);
     });
 
     // Fade out Heater Overlay
     $("#heaterOverlay .doneButton").click(function() {
-        $("#heaterOverlay").fadeOut(300);
+        $("#heaterOverlay").fadeOut(transitionSpeed);
     });
 
     // Show smoke alarm overlay
     $(".smokeAlarmSettings").click(function() {
-        $("#smokeAlarmOverlay").fadeIn(300);
+        $("#smokeAlarmOverlay").fadeIn(transitionSpeed);
     });
 
     // Test alarm button
@@ -71,6 +77,12 @@ $(document).ready(function() {
 
     // Add device button
     $(".addDeviceButton").click(function() {
-        $("#addDeviceOverlay").fadeIn(300);
+        $("#addDeviceOverlay").fadeIn(transitionSpeed);
+    });
+
+    $(".overlayOuter").click(function(e) {
+        e.stopPropagation();
+        e.preventDefault();
+        $(this).fadeOut(transitionSpeed);
     });
 });
