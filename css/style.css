@@ -184,6 +184,15 @@ form input {
   height: 100%;
   z-index: 100;
   display: none; }
+  .overlayOuter section {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%); }
 
 .overlayInner {
   width: 100%;
@@ -194,7 +203,6 @@ form input {
   -o-border-radius: 5px;
   border-radius: 5px;
   max-width: 400px;
-  margin: 0 auto;
   padding: 20px;
   max-height: calc(100vh - 20px);
   overflow: auto; }
@@ -262,7 +270,6 @@ form input {
     text-align: center; }
   #mobileNav ul {
     list-style-type: none;
-    display: block;
     grid-column-gap: 10px; }
     #mobileNav ul li {
       background-color: #4885ED;
@@ -316,7 +323,7 @@ form input {
       display: inline;
       position: absolute;
       right: 10px;
-      max-width: calc(100% - 60px);
+      max-width: calc(100% - 50px);
       text-align: right; }
     .scenes .scene img, .scenes .scene p {
       top: 50%;

@@ -64,6 +64,11 @@
     height: 100%;
     z-index: 100;
     display: none;
+
+    section {
+        position: relative;
+        @include absoluteCenter;
+    }
 }
 
 .overlayInner {
@@ -71,7 +76,6 @@
     background-color: $whiteColor;
     @include borderRadius($borderRadius);
     max-width: 400px;
-    margin: 0 auto;
     padding: 20px;
     max-height: calc(100vh - 20px);
     overflow: auto;
@@ -151,7 +155,6 @@
     
     ul {
         list-style-type: none;
-        display: block;
         grid-column-gap: 10px;
 
         li {
@@ -203,7 +206,7 @@
             display: inline;
             position: absolute;
             right: 10px;
-            max-width: calc(100% - 60px);
+            max-width: calc(100% - 50px);
             text-align: right;
         }
 
