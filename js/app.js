@@ -24,9 +24,9 @@ $(document).ready(function() {
     });
 
     // Scene Switching
-    $(".scene").click(function() {
-        $(".scene").removeClass("isActiveScene");
-        $(this).addClass("isActiveScene");
+    $(".action").click(function() {
+        $(".action").removeClass("isActiveAction");
+        $(this).addClass("isActiveAction");
     });
 
     // Navigation popout

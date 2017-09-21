@@ -1,4 +1,4 @@
-.isActiveScene {
+.isActiveAction {
   opacity: 1 !important; }
 
 .isOnDevice {
@@ -292,11 +292,11 @@ form input {
         left: 0;
         right: 0; }
 
-.scenes {
+.actions {
   display: grid;
   grid-column-gap: 10px;
   position: relative; }
-  .scenes .scene {
+  .actions .action {
     height: 75px;
     background-color: #4885ED;
     opacity: 0.5;
@@ -313,28 +313,28 @@ form input {
     -o-transition: 300ms;
     transition: 300ms;
     margin-bottom: 10px; }
-    .scenes .scene img {
+    .actions .action img {
       width: 25px;
       height: 25px;
       position: relative;
       left: 10px; }
-    .scenes .scene p {
+    .actions .action p {
       color: #FFFFFF;
       display: inline;
       position: absolute;
       right: 10px;
       max-width: calc(100% - 50px);
       text-align: right; }
-    .scenes .scene img, .scenes .scene p {
+    .actions .action img, .actions .action p {
       top: 50%;
       -webkit-transform: translateY(-50%);
       -moz-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
       -o-transform: translateY(-50%);
       transform: translateY(-50%); }
-  .scenes .scene:nth-child(1) {
+  .actions .action:nth-child(1) {
     grid-column: 1/2; }
-  .scenes .scene:nth-child(2) {
+  .actions .action:nth-child(2) {
     grid-column: 2/3; }
 
 .devices {
@@ -514,6 +514,12 @@ form input {
   .devices {
     display: grid; }
     .devices .device {
-      grid-column: inherit; } }
+      grid-column: inherit; }
+
+  #mobileNav {
+    max-width: 500px;
+    left: -500px; }
+    #mobileNav ul li {
+      max-width: 400px; } }
 
 /*# sourceMappingURL=style.css.map */

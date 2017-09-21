@@ -179,12 +179,12 @@
     }
 }
 
-.scenes {
+.actions {
     display: grid;
     grid-column-gap: 10px;
     position: relative;
 
-    .scene {
+    .action {
         height: 75px;
         background-color: $blueColor;
         opacity: 0.5;
@@ -215,11 +215,11 @@
         }
     }
 
-    .scene:nth-child(1) {
+    .action:nth-child(1) {
         grid-column: 1/2;
     }
 
-    .scene:nth-child(2) {
+    .action:nth-child(2) {
         grid-column: 2/3;
     }
 }
