@@ -60,17 +60,26 @@
                     <p>Recent Devices<br>Pūrere o Mua</p>
                 </article>
                 <article id="devices" class="devices">
-                    <div class="device isOnDevice">
-                        <p>Bedroom Lights</p>
-                        <img class="switch isOnSwitch" src="img/icons/switch.png" alt="Switch Icon">
+                    <div class="device">
+                        <p>Bedroom 1 Lights</p>
+                        <label class="switch">
+                            <input type="checkbox" id="bedroom1Lights" class="toggleSwitch">
+                            <div class="slider round"></div>
+                        </label>
                     </div>
                     <div class="device">
                         <p>Lounge Television</p>
-                        <img class="switch" src="img/icons/switch.png" alt="Switch Icon">
+                        <label class="switch">
+                            <input type="checkbox" id="loungeTV" class="toggleSwitch">
+                            <div class="slider round"></div>
+                        </label>
                     </div>
                     <div class="device">
                         <p>Dining Room Fan</p>
-                        <img class="switch" src="img/icons/switch.png" alt="Switch Icon">
+                        <label class="switch">
+                            <input type="checkbox" id="diningFan" class="toggleSwitch">
+                            <div class="slider round"></div>
+                        </label>
                     </div>
                 </article>
             </section>
@@ -99,6 +108,22 @@
             
         </div>
     </div>
+
+    <!-- Load switch states from memory -->
+    <script type="text/javascript">
+        if (localStorage.getItem("switches") !== null) {
+            var Storage = JSON.parse(localStorage.getItem("switches"));
+            for (var i = 0; i < Storage.length; i++) {
+                if(Storage[i]['active'] === 'true' ){
+                    var SwitchID = Storage[i]['switch'];
+                    var SwitchExists = document.getElementById(SwitchID);
+                    if(SwitchExists !== null){
+                        SwitchExists.checked = true;
+                    }
+                }
+            };
+        }
+    </script>
     
     <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -108,5 +133,8 @@
 
     <!-- JS Link -->
     <script src="js/app.min.js"></script>
+
+    <!-- Button Toggle JS Link -->
+    <script src="js/buttonToggle.js"></script>
 </body>
 </html>

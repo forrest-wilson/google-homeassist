@@ -337,9 +337,9 @@ form input {
       display: inline;
       left: 20px;
       max-width: calc(100% - 135px); }
-    .devices .device img {
+    .devices .device img, .devices .device label {
       right: 20px; }
-    .devices .device p, .devices .device img {
+    .devices .device p, .devices .device img, .devices .device label {
       position: absolute;
       top: 50%;
       -webkit-transform: translateY(-50%);
@@ -347,9 +347,6 @@ form input {
       -ms-transform: translateY(-50%);
       -o-transform: translateY(-50%);
       transform: translateY(-50%); }
-
-.switch {
-  width: 75px; }
 
 .settings {
   width: 35px; }
@@ -425,6 +422,52 @@ form input {
     grid-column: 2/3; }
     .smokeAlarmStatus div:nth-child(2) p {
       color: #3CBA54; }
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  height: 34px;
+  width: 75px; }
+
+/* Hide default HTML checkbox */
+.switch input {
+  display: none; }
+
+/* The slider */
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-transition: 300ms;
+  transition: 300ms; }
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 2px;
+  bottom: 2px;
+  background-color: #FFFFFF;
+  -webkit-transition: 300ms;
+  transition: 300ms; }
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(41px);
+  -ms-transform: translateX(41px);
+  transform: translateX(41px); }
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+  border: 2px solid #FFFFFF; }
+
+.slider.round:before {
+  border-radius: 50%; }
 
 @media screen and (min-width: 500px) {
   h1 {
