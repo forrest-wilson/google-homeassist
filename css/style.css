@@ -262,7 +262,7 @@ form input {
     text-align: center; }
   #mobileNav ul {
     list-style-type: none;
-    display: grid;
+    display: block;
     grid-column-gap: 10px; }
     #mobileNav ul li {
       background-color: #4885ED;
@@ -281,10 +281,6 @@ form input {
         line-height: 75px;
         left: 0;
         right: 0; }
-    #mobileNav ul li:nth-child(1) {
-      grid-column: 1/2; }
-    #mobileNav ul li:nth-child(2) {
-      grid-column: 2/3; }
 
 .scenes {
   display: grid;
@@ -427,6 +423,9 @@ form input {
 .heatCoolSelect {
   margin-top: 10px; }
 
+.smokeAlarm, .heatPump {
+  background-color: #F4C20D !important; }
+
 .smokeAlarmStatus {
   display: grid; }
   .smokeAlarmStatus div p {
@@ -502,8 +501,5 @@ form input {
     -o-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     position: absolute; } }
-@media screen and (min-height: 650px) {
-  #mobileNav ul {
-    display: block; } }
 
 /*# sourceMappingURL=style.css.map */
