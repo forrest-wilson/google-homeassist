@@ -23,7 +23,7 @@ $(document).ready(function() {
 			//put the switch into localstorage
 			localStorage.setItem("switches", JSON.stringify(switches));
 
-			$(this).parent().parent().removeClass("isOnDevice");
+			$(this).parent().parent().addClass("isOnDevice");
 		} else {
 			//if it is being turned off remove it from local storage
 			for (var i = 0; i < switches.length; i++) {
@@ -33,7 +33,7 @@ $(document).ready(function() {
 			};
 			localStorage.setItem("switches", JSON.stringify(switches));
 
-			$(this).parent().parent().addClass("isOnDevice");
+			$(this).parent().parent().removeClass("isOnDevice");
 		}
 	});
 

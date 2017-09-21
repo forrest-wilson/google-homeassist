@@ -30,12 +30,6 @@ $(document).ready(function() {
         $(".line3").toggleClass("isHamburgerPressedLine3");
     });
 
-    // Toggle On/Off of devices
-    $(".device .switch").click(function() {
-        $(this).parent().toggleClass("isOnDevice");
-        $(this).toggleClass("isOnSwitch");
-    });
-
     // Show heater overlay
     $(".heaterSettings").click(function() {
         $("#heaterOverlay").fadeIn(300);
