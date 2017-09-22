@@ -191,6 +191,7 @@
     z-index: 50;
     background-color: $whiteColor;
     @include transitionSpeed;
+    display: none;
 
     ul {
         margin: 0;
@@ -380,7 +381,7 @@
     margin-top: 10px;
 }
 
-.smokeAlarm, .heatPump {
+.smokeAlarm, .heatPump, .securityCamera {
     background-color: $yellowColor!important;
 }
 
@@ -467,4 +468,17 @@
     right: 0;
     bottom: 0;
     background-color: $overlayColor;
+}
+
+#securityCameraOverlay {
+    .securityCameraBlock {
+        p {
+            padding-bottom: 10px;
+        }
+    }
+
+    img {
+        width: 100%;
+        @include borderRadius($borderRadius);
+    }
 }
