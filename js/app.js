@@ -102,23 +102,4 @@ $(document).ready(function() {
     $(".securitySettings").click(function() {
         $("#securityCameraOverlay").fadeIn(transitionSpeed);
     });
-
-    ////////////////////////////////
-    //// Resize Window Function ////
-    ////////////////////////////////
-
-    window.onresize = function(e) {
-        $("#mobileNav").removeClass("isActiveMobileNav");
-        $("#tvNav").removeClass("isActiveTVNav");
-
-        $(".line1").removeClass("isHamburgerPressedLine1");
-        $(".line2").removeClass("isHamburgerPressedLine2");
-        $(".line3").removeClass("isHamburgerPressedLine3");
-
-        $("#mask").fadeOut(transitionSpeed);
-
-        $("#main").removeClass("isActiveTVNavMain");
-
-        $("#hamburgerButton").removeClass("navOpen");
-    }
 });
