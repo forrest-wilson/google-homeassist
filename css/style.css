@@ -31,6 +31,9 @@
 .textCenter {
   text-align: center; }
 
+.isActiveToggleableDevices {
+  display: grid !important; }
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -568,24 +571,26 @@ form input {
   .signinMaxWidth {
     margin: 0 auto; }
 
-  .devices {
-    display: grid; }
-    .devices .device {
-      grid-column: inherit; }
-
   #mobileNav {
     max-width: 500px;
     left: -500px; }
     #mobileNav ul li {
       max-width: 400px; } }
+@media screen and (min-width: 700px) {
+  .devices, .toggleableDevices {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px; }
+    .devices button, .toggleableDevices button {
+      margin: 0 auto;
+      max-height: 75px; }
+    .devices .toggleableDevices, .toggleableDevices .toggleableDevices {
+      grid-column: 1/3; } }
 @media screen and (min-width: 1280px) {
-  #hamburgerButton {
+  #hamburgerButton, #mobileNav {
     display: none; }
 
   #tvHamburgerButton {
-    display: block; }
-
-  #mobileNav {
-    display: none; } }
+    display: block; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -83,12 +83,12 @@ $(document).ready(function() {
     // Show more Devices event
     $(".showMoreButton").click(function() {
         $(this).hide();
-        $(this).parent().find(".toggleableDevices").show();
+        $(this).parent().find(".toggleableDevices").addClass("isActiveToggleableDevices");
     });
 
     // Hide Devices event
     $(".showLessButton").click(function() {
-        $(this).parent().hide();
+        $(this).parent().removeClass("isActiveToggleableDevices");
         $(this).parent().parent().find(".showMoreButton").show();
     });
 

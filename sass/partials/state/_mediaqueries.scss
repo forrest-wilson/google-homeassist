@@ -18,14 +18,6 @@
         margin: 0 auto;
     }
 
-    .devices {
-        display: grid;
-
-        .device {
-            grid-column: inherit;
-        }
-    }
-
     #mobileNav {
         max-width: 500px;
         left: -500px;
@@ -38,20 +30,29 @@
 
 // For Viewports bigger than 699px
 @media screen and (min-width: 700px) {
-    
+    .devices, .toggleableDevices {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+
+        button {
+            margin: 0 auto;
+            max-height: 75px;
+        }
+
+        .toggleableDevices {
+            grid-column: 1/3;
+        }
+    }
 }
 
 // For Viewports bigger than 1279px
 @media screen and (min-width: 1280px) {
-    #hamburgerButton {
+    #hamburgerButton, #mobileNav {
         display: none;
     }
 
     #tvHamburgerButton {
         display: block;
-    }
-    
-    #mobileNav {
-        display: none;
     }
 }
