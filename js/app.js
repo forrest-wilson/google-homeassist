@@ -55,50 +55,51 @@ $(document).ready(function() {
         $(".line3").toggleClass("isHamburgerPressedLine3");
     });
 
-    // Show heater overlay
+    // Fade In Heater Overlay
     $(".heaterSettings").click(function() {
         $("#heaterOverlay").fadeIn(transitionSpeed);
     });
 
-    // Fade out Heater Overlay
+    // Fade Out Heater Overlay
     $("#heaterOverlay .doneButton").click(function() {
         $("#heaterOverlay").fadeOut(transitionSpeed);
     });
 
-    // Show smoke alarm overlay
+    // Show Smoke Alarm Overlay
     $(".smokeAlarmSettings").click(function() {
         $("#smokeAlarmOverlay").fadeIn(transitionSpeed);
     });
 
-    // Test alarm button
+    // Test Alarm Button
     $(".testAlarmButton").click(function() {
         $(this).hide();
         $(".testingAlarmButton").show();
     });
 
+    // Testing Alarm Button
     $(".testingAlarmButton").click(function() {
         $(this).hide();
         $(".testAlarmButton").show();
     });
 
-    // Show more Devices event
+    // Show More Devices
     $(".showMoreButton").click(function() {
         $(this).hide();
         $(this).parent().find(".toggleableDevices").addClass("isActiveToggleableDevices");
     });
 
-    // Hide Devices event
+    // Hide More Devices
     $(".showLessButton").click(function() {
         $(this).parent().removeClass("isActiveToggleableDevices");
         $(this).parent().parent().find(".showMoreButton").show();
     });
 
-    // Add device button
+    // Show Add Device Overlay
     $(".addDeviceButton").click(function() {
         $("#addDeviceOverlay").fadeIn(transitionSpeed);
     });
 
-    // Show security camera overlay
+    // Show Security Camera Overlay
     $(".securitySettings").click(function() {
         $("#securityCameraOverlay").fadeIn(transitionSpeed);
     });

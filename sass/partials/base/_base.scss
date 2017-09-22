@@ -14,11 +14,6 @@ body {
     min-width: 200px;
 }
 
-h1, p, a {
-    font-weight: 300;
-    line-height: 1.5em;
-}
-
 h1 {
     font-size: 24px;
     margin-top: 0;
@@ -36,13 +31,14 @@ a {
     text-decoration: none;
 }
 
+h1, p, a {
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
 ul {
     padding: 0;
     margin-bottom: 0;
-}
-
-select, button {
-    font-family: 'Poppins', sans-serif;
 }
 
 select {
@@ -79,6 +75,10 @@ button {
     padding: 0;
 }
 
+select, button {
+    font-family: 'Poppins', sans-serif;
+}
+
 form {
     fieldset {
         border: none;
@@ -98,8 +98,6 @@ form {
     }
 }
 
-#signinLogo {
-    width: 150px;
-    margin: 0 auto;
-    display: block;
+.smokeAlarm, .heatPump, .securityCamera {
+    background-color: $yellowColor!important;
 }
