@@ -64,9 +64,6 @@ a {
   color: #4885ED;
   text-decoration: none; }
 
-article {
-  font-size: 0; }
-
 ul {
   padding: 0;
   margin-bottom: 0; }
@@ -448,7 +445,12 @@ form input {
     height: 75px;
     grid-column: 2/3;
     position: relative;
-    min-width: 5px; }
+    min-width: 5px;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms; }
     .heaterOnOff .heaterSwitch .switch {
       top: 50%;
       left: 50%;
