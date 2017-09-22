@@ -332,6 +332,7 @@
         grid-column: 2/3;
         position: relative;
         min-width: 5px;
+        @include transitionSpeed;
 
         .switch {
             @include absoluteCenter;
