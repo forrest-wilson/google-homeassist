@@ -412,8 +412,17 @@
                 </div>
             </article>
 
-            <button class="testAlarmButton">Test Alarm</button>
+            <script>
+                function play(){
+                     var audio = document.getElementById("smokeAlarmAudio");
+                     audio.play();
+                }
+            </script>
+
+            <button class="testAlarmButton" onclick="play()">Test Alarm</button>
             <button class="testingAlarmButton">Testing... Click to finish test</button>
+
+            <audio id="smokeAlarmAudio" src="media/audio/smokealarmnoise.wav"></audio>
         </section>
     </div>
 
