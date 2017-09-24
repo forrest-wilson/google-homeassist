@@ -8,7 +8,7 @@ This project is not associated/sponsored with/by Google
 The only third party piece of software used is Koala as a SASS compiler and JS minifier.
 Configure Koala to compile CSS to the /css folder and all minified JS to the /js folder.
 
-Koala can be downloaded **[here](http://koala-app.com/)**
+Koala can be downloaded **[here](http://koala-app.com/)**.
 
 ## Frameworks
 * [Normalize.css](https://necolas.github.io/normalize.css/7.0.0/normalize.css) - CSS Reset Framework (v7.0.0)
