@@ -77,6 +77,8 @@
     background-color: $whiteColor;
     @include transitionSpeed;
     display: none;
+    max-width: calc(100vw - 5%);
+    left: 2.5%;
 
     ul {
         margin: 0;
@@ -93,26 +95,6 @@
                 line-height: 60px;
             }
         }
-
-        li:nth-child(1) {
-            grid-column: 1/2;
-        }
-
-        li:nth-child(2) {
-            grid-column: 2/3;
-        }
-
-        li:nth-child(3) {
-            grid-column: 3/4;
-        }
-
-        li:nth-child(4) {
-            grid-column: 4/5;
-        }
-
-        li:nth-child(5) {
-            grid-column: 5/6;
-        }
     }
 }
 
@@ -124,6 +106,12 @@
     position: relative;
     padding-top: 50px;
     @include transitionSpeed;
+}
+
+.addDeviceWrapper {
+    display: block!important;
+    max-width: 700px!important;
+    margin: 0 auto;
 }
 
 .signinMain {
@@ -342,6 +330,8 @@
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    opacity: 0.5;
+    @include transitionSpeed;
 
     a {
         @include positioning(absolute, $l: 0, $r: 0);
