@@ -7,6 +7,12 @@
 .isActiveMobileNav {
   left: 0% !important; }
 
+.isActiveNavItem {
+  opacity: 1 !important; }
+
+.nav li:hover {
+  opacity: 1; }
+
 .isActiveTVNav {
   top: 50px !important; }
 
@@ -209,7 +215,9 @@ form input {
   -ms-transition: 300ms;
   -o-transition: 300ms;
   transition: 300ms;
-  display: none; }
+  display: none;
+  max-width: calc(100vw - 5%);
+  left: 2.5%; }
   #tvNav ul {
     margin: 0;
     display: grid;
@@ -221,16 +229,6 @@ form input {
       max-width: 400px; }
       #tvNav ul li a {
         line-height: 60px; }
-    #tvNav ul li:nth-child(1) {
-      grid-column: 1/2; }
-    #tvNav ul li:nth-child(2) {
-      grid-column: 2/3; }
-    #tvNav ul li:nth-child(3) {
-      grid-column: 3/4; }
-    #tvNav ul li:nth-child(4) {
-      grid-column: 4/5; }
-    #tvNav ul li:nth-child(5) {
-      grid-column: 5/6; }
 
 #main {
   position: relative;
@@ -240,6 +238,11 @@ form input {
   -ms-transition: 300ms;
   -o-transition: 300ms;
   transition: 300ms; }
+
+.addDeviceWrapper {
+  display: block !important;
+  max-width: 700px !important;
+  margin: 0 auto; }
 
 .signinMain {
   display: block !important; }
@@ -427,7 +430,13 @@ form input {
   max-width: 300px;
   margin-left: auto;
   margin-right: auto;
-  width: 100%; }
+  width: 100%;
+  opacity: 0.5;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -ms-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms; }
   .nav li a {
     position: absolute;
     left: 0;
@@ -665,7 +674,9 @@ form input {
     display: block; }
 
   #tvNav {
-    display: grid; } }
+    display: grid; }
+    #tvNav ul {
+      grid-template-columns: repeat(5, 1fr); } }
 @media screen and (min-width: 1366px) {
   #main {
     display: grid;
@@ -676,7 +687,7 @@ form input {
     margin: 0 auto; }
     #main .section:first-child {
       grid-column: 1/3; }
-    #main .room {
+    #main .boxShadow {
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
       -ms-border-radius: 5px;
@@ -688,7 +699,7 @@ form input {
       -ms-transition: 300ms;
       -o-transition: 300ms;
       transition: 300ms; }
-      #main .room:hover {
+      #main .boxShadow:hover {
         -webkit-box-shadow: 0px 0px 10px rgba(138, 140, 143, 0.5);
         -moz-box-shadow: 0px 0px 10px rgba(138, 140, 143, 0.5);
         box-shadow: 0px 0px 10px rgba(138, 140, 143, 0.5); } }
