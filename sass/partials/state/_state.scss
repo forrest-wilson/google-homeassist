@@ -48,3 +48,11 @@
 .isActiveToggleableDevices {
     display: grid!important;
 }
+
+.loginFooter {
+    display: block!important;
+
+    p {
+        line-height: 50px;
+    }
+}

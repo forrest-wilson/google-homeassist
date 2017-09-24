@@ -34,6 +34,11 @@
 .isActiveToggleableDevices {
   display: grid !important; }
 
+.loginFooter {
+  display: block !important; }
+  .loginFooter p {
+    line-height: 50px; }
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
