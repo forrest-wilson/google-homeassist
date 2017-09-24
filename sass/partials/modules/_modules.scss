@@ -271,15 +271,28 @@
 ///////////////////////
 
 #footer {
-    height: 50px;
-    max-height: 50px;
-    background-color: $whiteColor;
-
     p {
-        text-align: center;
-        font-size: 14px;
         margin: 0;
-        line-height: 50px;
+    }
+
+    p, a, .footerSection {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .footerSection {
+        article {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        article:not(:last-child) {
+            padding-bottom: 10px;
+        }
+    }
+
+    .copyright {
+        padding-top: 20px;
     }
 }
 
