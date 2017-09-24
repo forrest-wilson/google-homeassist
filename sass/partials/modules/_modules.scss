@@ -138,6 +138,7 @@
     display: grid;
     grid-column-gap: 10px;
     position: relative;
+    max-width: 1000px;
 
     .action {
         height: 75px;
