@@ -148,7 +148,10 @@ form input {
   right: 0;
   height: 50px;
   background-color: #FFFFFF;
-  z-index: 90; }
+  z-index: 90;
+  -webkit-box-shadow: 0px 0px 10px rgba(138, 140, 143, 0.5);
+  -moz-box-shadow: 0px 0px 10px rgba(138, 140, 143, 0.5);
+  box-shadow: 0px 0px 10px rgba(138, 140, 143, 0.5); }
   #header .hamburgerButton {
     position: absolute;
     width: 30px;
@@ -635,10 +638,27 @@ form input {
   #main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 10px; }
-    #main .section:nth-child(1) {
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    max-width: calc(100vw - 5%);
+    margin: 0 auto; }
+    #main .section:first-child {
       grid-column: 1/3; }
-    #main .section:not(:nth-child(1)) {
-      padding: 20px; } }
+    #main .room {
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      border-radius: 5px;
+      padding: 20px;
+      -webkit-transition: 300ms;
+      -moz-transition: 300ms;
+      -ms-transition: 300ms;
+      -o-transition: 300ms;
+      transition: 300ms; }
+      #main .room:hover {
+        -webkit-box-shadow: 0px 0px 10px rgba(138, 140, 143, 0.5);
+        -moz-box-shadow: 0px 0px 10px rgba(138, 140, 143, 0.5);
+        box-shadow: 0px 0px 10px rgba(138, 140, 143, 0.5); } }
 
 /*# sourceMappingURL=style.css.map */

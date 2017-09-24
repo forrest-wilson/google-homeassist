@@ -66,3 +66,10 @@
     left: $l;
     right: $r;
 }
+
+// Browser compatability for box-shadow
+@mixin boxShadow($v: 0px, $h: 0px, $blur: null, $spread: null, $color: null) {
+    -webkit-box-shadow: $v $h $blur $spread $color;
+       -moz-box-shadow: $v $h $blur $spread $color;
+            box-shadow: $v $h $blur $spread $color;
+}
