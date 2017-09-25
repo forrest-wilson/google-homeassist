@@ -249,6 +249,7 @@ form input {
 
 .actions {
   display: grid;
+  grid-template-columns: 1fr 1fr;
   grid-column-gap: 10px;
   position: relative;
   max-width: 1000px;
@@ -641,7 +642,7 @@ form input {
       text-align: center;
       max-width: initial;
       line-height: 100px;
-      font-size: 16px; }
+      font-size: 20px; }
 
   .allActions {
     grid-column: 1/3; }
