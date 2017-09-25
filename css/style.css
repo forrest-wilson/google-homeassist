@@ -14,7 +14,7 @@
   opacity: 1; }
 
 .isActiveTVNav {
-  top: 50px !important; }
+  top: -80px !important; }
 
 .isActiveTVNavMain {
   padding-top: 130px !important; }
@@ -206,7 +206,7 @@ form input {
 
 #tvNav {
   position: fixed;
-  top: -80px;
+  top: 50px;
   width: 100%;
   z-index: 50;
   background-color: #FFFFFF;
@@ -215,13 +215,13 @@ form input {
   -ms-transition: 300ms;
   -o-transition: 300ms;
   transition: 300ms;
-  display: none;
-  max-width: calc(100vw - 5%);
-  left: 2.5%; }
+  display: none; }
   #tvNav ul {
-    margin: 0;
+    margin: 0 auto;
     display: grid;
-    grid-gap: 10px; }
+    grid-gap: 10px;
+    max-width: calc(100vw - 5%);
+    left: 2.5%; }
     #tvNav ul li {
       display: inline-block;
       height: 60px;
@@ -676,8 +676,8 @@ form input {
   #tvNav {
     display: grid; }
     #tvNav ul {
-      grid-template-columns: repeat(5, 1fr); } }
-@media screen and (min-width: 1366px) {
+      grid-template-columns: repeat(5, 1fr); }
+
   #main {
     display: grid;
     grid-template-columns: 1fr 1fr;
