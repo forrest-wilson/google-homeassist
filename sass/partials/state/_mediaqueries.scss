@@ -139,4 +139,14 @@
             }
         }
     }
+
+    .devices {
+        .showMoreButton, .showLessButton {
+            display: none;
+        }
+
+        .toggleableDevices {
+            display: grid;
+        }
+    }
 }
