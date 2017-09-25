@@ -5,6 +5,33 @@ $(document).ready(function() {
     ///////////////////
 
     var transitionSpeed = 300;
+    var docWidth = $(document).width();
+
+    ///////////////////
+    //// Functions ////
+    ///////////////////
+
+    // Function to add/remove active class to #main depending on screen size
+    function toggleTVNavClasses() {
+        if (docWidth >= 1280) {
+            $("#main").addClass("isActiveTVNavMain");
+            console.log("class added to #main");
+        } else {
+            $("#main").removeClass("isActiveTVNavMain");
+            console.log("class removed from #main");
+        }
+    }
+
+    // Calling function so it runs on page load
+    toggleTVNavClasses();
+
+    // Update docWidth when screen is resized
+    window.onresize = function() {
+        docWidth = $(document).width();
+        console.log(docWidth);
+
+        toggleTVNavClasses();
+    }
     
     /////////////////////////
     //// Click Functions ////
