@@ -99,12 +99,6 @@ $(document).ready(function() {
         $(".testingAlarmButton").show();
     });
 
-    // Testing Alarm Button
-    $(".testingAlarmButton").click(function() {
-        $(this).hide();
-        $(".testAlarmButton").show();
-    });
-
     // Show More Devices
     $(".showMoreButton").click(function() {
         $(this).hide();
