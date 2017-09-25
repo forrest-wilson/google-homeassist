@@ -425,15 +425,10 @@
                 </div>
             </article>
 
-            <script>
-                function play(){
-                     var audio = document.getElementById("smokeAlarmAudio");
-                     audio.play();
-                }
-            </script>
+            <script src="js/testAlarm.min.js"></script>
 
             <button class="testAlarmButton" onclick="play()">Test Alarm</button>
-            <button class="testingAlarmButton">Testing... Click to finish test</button>
+            <button class="testingAlarmButton" disabled>Testing...</button>
 
             <audio id="smokeAlarmAudio" src="media/audio/smokealarmnoise.wav"></audio>
         </section>
