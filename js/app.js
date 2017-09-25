@@ -15,10 +15,8 @@ $(document).ready(function() {
     function toggleTVNavClasses() {
         if (docWidth >= 1280) {
             $("#main").addClass("isActiveTVNavMain");
-            console.log("class added to #main");
         } else {
             $("#main").removeClass("isActiveTVNavMain");
-            console.log("class removed from #main");
         }
     }
 
@@ -28,8 +26,6 @@ $(document).ready(function() {
     // Update docWidth when screen is resized
     window.onresize = function() {
         docWidth = $(document).width();
-        console.log(docWidth);
-
         toggleTVNavClasses();
     }
     
