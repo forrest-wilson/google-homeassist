@@ -82,7 +82,7 @@
         margin: 0 auto;
         display: grid;
         grid-gap: 10px;
-        max-width: calc(100vw - 5%);
+        max-width: $mainMaxWidth;
         left: 2.5%;
 
         li {
@@ -127,6 +127,7 @@
     grid-column-gap: 10px;
     position: relative;
     max-width: 1000px;
+    margin: 0 auto;
 
     .action {
         height: 75px;
@@ -287,6 +288,10 @@
 
     .copyright {
         padding-top: 20px;
+
+        a:hover {
+            text-decoration: underline;
+        }
     }
 }
 
