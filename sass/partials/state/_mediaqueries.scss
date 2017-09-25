@@ -116,10 +116,7 @@
             grid-template-columns: repeat(5, 1fr);
         }
     }
-}
 
-// For Viewports bigger than 1365px
-@media screen and (min-width: 1366px) {
     #main {
         display: grid;
         grid-template-columns: 1fr 1fr;
