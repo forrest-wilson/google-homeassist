@@ -409,8 +409,8 @@ form input {
   #footer .copyright a:hover {
     text-decoration: underline; }
 
-.signinFooter {
-  display: block !important; }
+.signinFooter article {
+  line-height: 63px; }
 
 #mobileNav {
   position: fixed;
