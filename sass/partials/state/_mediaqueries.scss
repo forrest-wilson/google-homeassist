@@ -81,7 +81,7 @@
 // For Viewports bigger than 999px
 @media screen and (min-width: 1000px) {
     .wrapper {
-        min-height: calc(100vh - 62px);
+        min-height: calc(100vh - 83px);
     }
     
     #footer {
@@ -95,7 +95,7 @@
     }
 
     .footerSection p {
-        line-height: 42px;
+        line-height: 63px;
     }
 }
 
