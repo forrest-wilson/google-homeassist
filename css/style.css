@@ -44,6 +44,9 @@
 .isActiveToggleableDevices {
   display: grid !important; }
 
+.securityCameraBlock p a:hover {
+  text-decoration: underline; }
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -599,6 +602,9 @@ form input {
 
 #securityCameraOverlay .securityCameraBlock p {
   padding-bottom: 10px; }
+
+#securityCameraOverlay .securityCameraBlock p:last-child {
+  padding: 10px 0 0 0; }
 
 #securityCameraOverlay img {
   width: 100%;

@@ -504,6 +504,10 @@
         p {
             padding-bottom: 10px;
         }
+
+        p:last-child {
+            padding: 10px 0 0 0;
+        }
     }
 
     img {
